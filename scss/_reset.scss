@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Roboto Mono", monospace;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: var(--WHITE);
+    color: var(--BLACK-PRIMARY);
+}
+
+h1, h2, h3, h4{
+    font-family: "Road Rage", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--BLACK-PRIMARY);
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
