@@ -4,6 +4,7 @@
     height: 95.5rem;
     background: url("../img/paper-texture.avif") no-repeat top center;
     background-size: cover;
+    overflow: hidden;
     .text-left{
         width: 100%;
         max-width: 63rem;
@@ -78,5 +79,15 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
+            }
+            @media(max-width: 1700px){
+                    .illustration{
+                        right: -20rem;
+                    }
+            }
+            @media(max-widht: 1440px){
+                .illustration{
+                    right: -36rem;
+                }
             }
 }
