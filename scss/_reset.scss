@@ -1,49 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-      font-family: "Roboto Mono", monospace;
+    font-family: "Roboto Mono", monospace;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-button{
+button {
     padding: 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-body{
+body {
     background-color: var(--WHITE);
     color: var(--BLACK-PRIMARY);
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     font-family: "Road Rage", sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--BLACK-PRIMARY);
 }
 
-html{
+html {
     font-size: 62.5%;
 
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 120rem;
     padding: 0 15px;
     margin: 0 auto;
 }
 
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 2rem 3.8rem 2rem 5.2rem;
+    background-color: var(--YELLOW-SECONDARY);
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: var(--BLACK-PRIMARY);
+
+        span {
+            color: var(--WHITE);
+        }
+
+        img {
+            filter: invert(1);
+        }
+    }
+
+    span {
+        color: var(--BLACK-PRIMARY);
+        font-family: "Road Rage", sans-serif;
+        font-size: 4.8rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        transition: color .3s ease;
+    }
+
+    img {
+        transition: filter .3s ease;
+    }
+}

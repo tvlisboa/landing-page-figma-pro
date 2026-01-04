@@ -215,6 +215,7 @@ Section-how-to-use-css
         flex: 1;
         max-width: 50rem;
         position: relative;
+        margin-bottom: 9rem;
 
         h2 {
             position: absolute;
@@ -265,6 +266,24 @@ Section-how-to-use-css
 
         img {
             position: absolute;
+
+            &.one {
+                top: 22px;
+                left: 16px;
+                z-index: 1;
+            }
+
+            &.two {
+                top: 0px;
+                right: 35px;
+                z-index: 1;
+            }
+
+            &.three {
+                bottom: 70px;
+                left: 145px;
+                z-index: 2;
+            }
         }
 
         .shadow {
@@ -278,11 +297,12 @@ Section-how-to-use-css
             filter: blur(5.5px);
             z-index: -1;
         }
+    }
 
-        .one {}
-
-        .two {}
-
-        .three {}
+    .btn-primary {
+        position: absolute;
+        left: 50%;
+        margin-left: -14rem;
+        bottom: -24px;
     }
 }
