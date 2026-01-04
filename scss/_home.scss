@@ -125,7 +125,7 @@ Section-numbers-css
         font-size: 1.6rem;
         line-height: 155.3%;
         width: 100%;
-        max-width: 700px;
+        max-width: 70rem;
         margin: 0 auto;
         margin-bottom: 10.5rem;
     }
@@ -174,7 +174,6 @@ Section-numbers-css
 
                     &:not(:first-child) {
                         border-left: 2px solid rgba(255, 255, 255, 0.5);
-
                     }
 
                     strong {
@@ -203,8 +202,8 @@ Section-how-to-use-css
 .s-how-to-use {
     position: relative;
     background-color: var(--BACKGROUND-COLOR);
-    padding-top: 10.5rem;
-    padding-bottom: 10.5rem;
+    padding-top: 5rem;
+    padding-bottom: 11.5rem;
 
     .container {
         display: flex;
@@ -215,10 +214,19 @@ Section-how-to-use-css
     .left-container {
         flex: 1;
         max-width: 50rem;
+        position: relative;
 
         h2 {
-            color: #C5C5C5;
-            font-size: 5.25rem;
+            position: absolute;
+            bottom: 10rem;
+            color: var(--TEXT-COLOR);
+            font-size: 9rem;
+            font-weight: 400;
+            line-height: 70%;
+            transform: rotate(-90deg);
+            left: -200px;
+            top: 100px;
+
             font-weight: 400;
             line-height: 72%;
         }
@@ -235,7 +243,8 @@ Section-how-to-use-css
                     font-size: 1.8rem;
                     font-weight: 400;
                     line-height: 155.3%;
-                    margin-bottom: 2rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1.5rem;
                 }
 
                 p {
@@ -245,5 +254,35 @@ Section-how-to-use-css
                 }
             }
         }
+    }
+
+    .right-container {
+        position: relative;
+        flex: 1;
+        max-width: 57rem;
+        height: 58rem;
+        z-index: 1;
+
+        img {
+            position: absolute;
+        }
+
+        .shadow {
+            position: absolute;
+            left: 0rem;
+            bottom: 0rem;
+            width: 100%;
+            height: 25rem;
+            border-radius: 50%;
+            background-color: rgba(195, 195, 195, 0.5);
+            filter: blur(5.5px);
+            z-index: -1;
+        }
+
+        .one {}
+
+        .two {}
+
+        .three {}
     }
 }
