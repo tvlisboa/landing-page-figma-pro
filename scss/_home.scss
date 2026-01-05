@@ -306,3 +306,130 @@ Section-how-to-use-css
         bottom: -24px;
     }
 }
+
+/*Section-stories*/
+.s-stories {
+    padding-top: 195px;
+    padding-bottom: 165px;
+
+    .title {
+        text-align: center;
+
+        h4 {
+            color: var(--TEXT-COLOR-SECONDARY);
+            font-family: "Roboto Mono", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 155.3%;
+            margin-bottom: 2.4rem;
+
+            strong {
+                color: var(--YELLOW-SECONDARY);
+            }
+        }
+
+        h2 {
+            color: var(--BLACK-PRIMARY);
+            font-size: 46rem;
+            font-weight: 400;
+            line-height: 0.7;
+            letter-spacing: 1.72125rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .text {
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 5rem;
+        position: relative;
+        z-index: 1;
+        margin-top: -32rem;
+        display: flex;
+
+        .description {
+            max-width: 40rem;
+            padding-bottom: 15rem;
+            flex: 1;
+        }
+
+        p {
+            color: var(--BLACK-PRIMARY);
+            font: 1.6rem;
+            line-height: 155.5%;
+
+            &:not(:last-child) {
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+}
+
+.s-tickers {
+    width: 100%;
+    background-color: var(--BACKGROUND-COLOR);
+    padding-top: 12rem;
+    padding-bottom: 85rem;
+
+    .title {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        max-width: 45rem;
+        margin: 0 auto;
+        margin-bottom: 200px;
+
+        .subtitle {
+            position: absolute;
+            top: -70px;
+            left: -20px;
+            color: var(--YELLOW-SECONDARY);
+            font-family: "Rock Salt", sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 155.5%;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+
+        h2 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 38px;
+            color: var(--BLACK-PRIMARY);
+            font-size: 15rem;
+            font-weight: 400;
+            line-height: 0.7px;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+
+            span {
+                font-family: "Road Rage";
+            }
+
+            img {
+                position: absolute;
+                right: 110px;
+            }
+        }
+    }
+
+    .card-stickers {
+        width: 100%;
+        max-width: 340px;
+        height: 412px;
+        border-radius: 20px;
+        border: 1px solid var(--YELLOW-SECONDARY);
+        padding: 5px;
+
+        .content {
+            border-radius: 20px;
+            border: 1px solid var(--BORDER-RADIUS-COLOR);
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
