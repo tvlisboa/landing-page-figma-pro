@@ -430,6 +430,47 @@ Section-how-to-use-css
             border: 1px solid var(--BORDER-RADIUS-COLOR);
             width: 100%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 18px;
+
+            .image {
+                width: 100%;
+                max-width: 206px;
+                height: 265px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                margin-top: -95px;
+                margin-bottom: 9px;
+            }
+
+            .info {
+                text-align: center;
+                margin-bottom: 35px;
+
+                h3 {
+                    color: var(--BLACK-PRIMARY);
+                    font-size: 4rem;
+                    font-weight: 400;
+                    line-height: 0.7;
+                    letter-spacing: 1.65px;
+                    text-transform: uppercase;
+                    margin-bottom: 2.5rem;
+                }
+
+                p {
+                    color: var(--TEXT-COLOR-TERCIARY);
+                    font-size: 1.4rem;
+                    line-height: 127%;
+                }
+            }
+
+            ul {
+                display: flex;
+                gap: 20px;
+            }
         }
     }
 }
